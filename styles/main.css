@@ -13,16 +13,25 @@
 
 }
 
-body#about img{ height: 20em}
+body#about img { 
+    height: 20em;
+    display: inline;
+    float: left;
+    margin-right: var(--horizontal-space);
+    border: 3px solid salmon;
+    box-shadow: -25px -20px 0px -9px rgba(248,154,154,0.31);
+    
+}
 
 header h1, nav, nav a{
     color:white;
 }
 
 
-p{
-    max-width: 50em;
-}
+
+
+
+
 
 a{
     color: var(--light-color);
@@ -48,13 +57,21 @@ body > *{
     padding-right: var(--horizontal-space); 
 }
 
+@media screen and (min-width: 25em) {
+    body#about img{
+        float: left;
+        margin-bottom: var(--vertical-space);
+        
+    }
+}
+
 body{
     display: grid;
     grid-template-areas: "head head"
                          "nav  nav"
                          "main main"
                          "foot foot";
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: auto 4fr;
     grid-template-rows: auto auto lfr auto;
     color: var(--heading-color);
     background-image: linear-gradient(45deg, rgba(254, 246, 210, 0.53) 0%, rgba(254, 246, 210, 0.53) 14.286%,rgba(221, 240, 216, 0.53) 14.286%, rgba(221, 240, 216, 0.53) 28.572%,rgba(188, 233, 223, 0.53) 28.572%, rgba(188, 233, 223, 0.53) 42.858%,rgba(156, 227, 229, 0.53) 42.858%, rgba(156, 227, 229, 0.53) 57.144%,rgba(123, 220, 235, 0.53) 57.144%, rgba(123, 220, 235, 0.53) 71.42999999999999%,rgba(90, 214, 242, 0.53) 71.43%, rgba(90, 214, 242, 0.53) 85.71600000000001%,rgba(57, 207, 248, 0.53) 85.716%, rgba(57, 207, 248, 0.53) 100.002%),linear-gradient(135deg, rgb(246, 99, 200) 0%, rgb(246, 99, 200) 12.5%,rgb(223, 98, 196) 12.5%, rgb(223, 98, 196) 25%,rgb(199, 97, 192) 25%, rgb(199, 97, 192) 37.5%,rgb(176, 96, 188) 37.5%, rgb(176, 96, 188) 50%,rgb(152, 95, 184) 50%, rgb(152, 95, 184) 62.5%,rgb(129, 94, 180) 62.5%, rgb(129, 94, 180) 75%,rgb(105, 93, 176) 75%, rgb(105, 93, 176) 87.5%,rgb(82, 92, 172) 87.5%, rgb(82, 92, 172) 100%);
@@ -66,30 +83,62 @@ main{
 
 @media screen and (min-width: 25em){
     body{
-        grid-template-areas: "head head"
-                             "nav main"
+        grid-template-areas: "head nav"
+                             "main main"
                              "foot foot";
         grid-template-columns: 1fr 4fr;
         grid-template-rows: auto lfr auto;
+    }
+    body > nav{
+        grid-area: nav;
+        padding-top: var(--vertical-space);
+    }
+
+    body > nav ul{
+        float: right;
     }
 
 }
 
 body > header{
     grid-area: head;
-  
-
 }
 
 body > nav{
     grid-area: nav;
-    
-
 }
+
+
+.dropdown-item {
+    margin-left: 10px;
+}
+
+body > main > *:first-child:before {
+    content: "";
+
+    border-top: 2px solid var(--subheading-color);
+    display: block
+    padding-top: var(--vertical-space);
+}
+
+body {
+    max-width: 50em;
+}
+
 
 body > nav ul { 
     list-style-type: none;
+    margin: 0;
     padding: 0;
+    line-height: 2.4;
+    
+    
+    
+}
+
+body > nav ul li{ 
+    display: inline-block;
+    padding-right: 1em;
 }
 
 
@@ -110,6 +159,10 @@ header, footer{
     padding-top: var(--vertical-space);
     padding-bottom: var(--vertical-space);
 
+}
+
+header {
+    padding-bottom: 0;
 }
 
 header h1, footer h1{

@@ -7,7 +7,7 @@
     </title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="icon" href="images/favicon.png" />
+    <link rel="icon" href="image/ppoo.ico" />
   </head>
   
   <body id = "portfolio">
@@ -25,26 +25,40 @@
       </ul>
     </nav>
     <main>
+      
     <h1>Portfolio</h1>
+    <nav id="navbar" >
+          <div class="dropdown">
+            
+            <a class="dropdown-item" href="#p1">Stage 1</a>
+            <a class="dropdown-item" href="#p2">Stage 2</a>
+            <a class="dropdown-item" href="#p3">Stage 3</a>
+            <a class="dropdown-item" href="#p4">Stage 4</a>
+
+          </div>
+
+    </nav>
+    
+
     <p>
       those are pretty much everything that i have done in my whole life that is related to CS projects. thank you very much for check on it!!!
     </p>
     <ul id = "portfolioItems">
       <li>
-        <h2>Layering list on queue</h2>
-        <img src = "image/project1.png" />
+        <h2 id = "p1">Layering list on queue</h2>
+        <img src = "image/project1.png" alt = "layer list on queue pic alt" />
         <p>
             The primary objective of this lab is to provide you experience working with:
 
           Layering a component (e.g., List) on another already existing component (e.g., Queue).
           This implementation is not meant to be necessarily a good (performance-wise) implementation. In fact it is not a good one from that respect. The idea here is to have you work with an unusual internal rep in order to reinforce the abstract thinking that goes with interpreting the correspondence between the concrete internal rep and the List's abstract value. From this standpoint, it is an excellent implementation.
         </p>
-        <a href="https://drholly77.github.io/CSSE373Pages/Assignments/2021/Lab4/L4.html">Link</a>
+        <a href="https://drholly77.github.io/CSSE373Pages/Assignments/2021/Lab4/L4.html">Link Here</a>
       </li>
       
       <li>
         <h2>Layering sequence on stack</h2>
-        <img src = "image/proj2.png" />
+        <img src = "image/proj2.png" alt = "layer stack pic alt"/>
         <p>
           The primary objective of this lab is to provide you experience with:
 
@@ -53,36 +67,26 @@
           Your choice of underlying component must come from those shown in the screen shot below
           Where you choose the correspondence between the component being developed (Sequence in this case) and the underlying data structures
         </p>
-        <a href="https://drholly77.github.io/CSSE373Pages/Assignments/2021/Lab5/L5.html">Link</a>
+        <a href="https://drholly77.github.io/CSSE373Pages/Assignments/2021/Lab5/L5.html">Link Here</a>
       </li>
 
       <li>
-        <h2>Tree on Map</h2>
-        <img src = "image/proj3.png" />
+        <h2 id = "p2">Tree on Map</h2>
+        <img src = "image/proj3.png" alt = "tree on map pic alt"/>
         <p>
           Layering a component (e.g., Map) on an already existing component (e.g., BinaryTree)
           An abstract math model for Binary Trees
           Investigate formal methods concepts related recursion
           Revisit binary search tree (BST) in an implementation of Map
         </p>
-        <a href="https://drholly77.github.io/CSSE373Pages/Assignments/2021/P2/ProjP2.html">Link</a>
+        <a href="https://drholly77.github.io/CSSE373Pages/Assignments/2021/P2/ProjP2.html">Link Here</a>
       </li>
 
-      <li>
-        <h2>colorSlider</h2>
-        <img src = "image/proj4.png" />
-        <p>
-          Create flexible layouts using constraints
-          Describe what constraints can be applied to views
-          Implement a UI layout plan in Xcode Interface Builder
-
-        </p>
-        <a href="https://docs.google.com/presentation/d/1sSTGofCK5Bzw3sXfqW5RCL2SyQZGOpVhRjsG9KO-vJQ/edit#slide=id.g330bee8d9_05">Link</a>
-      </li>
+      
 
       <li>
         <h2>lovers mode plug in for WhatsApp</h2>
-        <img src = "image/proj5.png" />
+        <img src = "image/proj5.png" alt = "lover mode pic alt"/>
         <p>
           Its a plug-in to help lovers dealing with fight and cold wars. 
         </p>
@@ -90,23 +94,55 @@
       </li>
 
       <li>
-        <h2>Project Name</h2>
-        <img src = "image/project1.jpeg" />
+        <h2 id = "p3">Game Design: Over the Sea</h2>
+        <img src = "image/proj77.png" alt = "game design pic alt"/>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eleifend quam adipiscing vitae proin sagittis. Nulla malesuada pellentesque elit eget gravida cum sociis.
+          Game design is the art of applying design and aesthetics to create a game for entertainment or for educational, exercise, or experimental purposes. Increasingly, elements and principles of game design are also applied to other interactions, in the form of gamification. Game designer and developer Robert Zubek defines game design by breaking it down to its elements, which he says are the following:[1]
+          Mechanics and systems, which are the rules and objects in the game
+          Gameplay, which is the interaction between the player and the mechanics and systems
+          Player experience, which is how users feel when they’re playing the game
+          Games such as board games, card games, dice games, casino games, role-playing games, sports, video games, war games, or simulation games benefit from the principles of game design.
         </p>
-        <a href="#">Link</a>
+        <a href="#">Link Here</a>
       </li>
 
+
       <li>
-        <h2>Project Name</h2>
-        <img src = "image/project1.jpeg" />
+        <h2>Build Stack with a FIFO Queue</h2>
+        <img src = "image/proj6.png" alt = "stack on queue pic alt"/>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eleifend quam adipiscing vitae proin sagittis. Nulla malesuada pellentesque elit eget gravida cum sociis.
+          An excellent example of a queue is a line of students in the food court of the UC. New additions to a line made to the back of the queue, while removal (or serving) happens in the front. In the queue only two operations are allowed enqueue and dequeue. Enqueue means to insert an item into the back of the queue, dequeue means removing the front item. The picture demonstrates the FIFO access. The difference between stacks and queues is in removing. In a stack we remove the item the most recently added; in a queue, we remove the item the least recently added.
         </p>
-        <a href="#">Link</a>
+        <a href="#">Link Here</a>
       </li>
-    </ul>
+
+    
+
+    <li>
+      <h2 id = "p4">colorSlider</h2>
+      <img src = "image/proj4.png" alt = "color slider pic alt"/>
+      <p>
+        Create flexible layouts using constraints
+        Describe what constraints can be applied to views
+        Implement a UI layout plan in Xcode Interface Builder
+        the main thing user can do here is not very much but you
+        can slide the color bar in whatever way you want to. 
+
+      </p>
+      <a href="https://docs.google.com/presentation/d/1sSTGofCK5Bzw3sXfqW5RCL2SyQZGOpVhRjsG9KO-vJQ/edit#slide=id.g330bee8d9_05">Link Here</a>
+    </li>
+
+    <li>
+      <h2>Population Algorithm Design</h2>
+      <img src = "image/proj32.png" alt = "algo pic alt"/>
+      <p>
+        I reviewed two categories of literature, which include population-based algorithms solving data analysis problem and utilizing data analysis methods in population-based algorithms. 
+
+      </p>
+      <a href="https://docs.google.com/presentation/d/1sSTGofCK5Bzw3sXfqW5RCL2SyQZGOpVhRjsG9KO-vJQ/edit#slide=id.g330bee8d9_05">Link Here</a>
+    </li>
+
+  </ul>
     
     
     </main>
@@ -114,6 +150,11 @@
         you can call me or email me whatever at markt0815@icloud.com
 
     </footer>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/popper.js"></script>
+    <script src="scripts/bootstrap-material-design.js"></script>
+    <script>$("body").bootstrapMaterialDesign();</script>
     <script src="scripts/main.js"></script>
+
   </body>
 </html> 
